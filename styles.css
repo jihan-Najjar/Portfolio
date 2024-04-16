@@ -8,15 +8,29 @@
     
 
 }
+/* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+} */
 .d-flex {
     display: flex;
     align-items: center;
 
 }
+.container{
+    /* position: relative; */
+    width: 1500px;
+/* justify-content: center; */
+/* flex-direction: column; */
+}
+
+
 .header {
-    width: 100%;
+    width: inherit;
     position: fixed;
+
     background-color: #1B2A3F;
     justify-content: space-between;
     padding: 0 1rem 0 1rem;
@@ -54,6 +68,11 @@
     background-color: #cccccc;
     margin: 1rem 0 1rem 0;
 
+}
+#home .section-home h3.hello-sspan{
+    background-color: red;
+    text-align: left ;
+    border: 2px solid #CBA013;
 }
 ul.header-nav-link{
     gap: 3rem;
@@ -157,6 +176,7 @@ a{
 
 
 #about{
+    justify-content: space-between;
     color: #1B2A3F;
 
     background-color: #F8F8F8;
@@ -165,12 +185,24 @@ a{
     padding-block-start: 2rem;
     padding-block-end: 2rem;
 }
-#about p{
+#about p,dt{
     margin-top: .7rem;
+  font-weight: 700;
 
 }
-#about p::first-letter {
-    color: #ffbd39;
+dd{
+  font-weight: 500;
+  padding-left: 2rem;
+
+}
+.p-span-contact ,dt{
+    color: #CBA013;
+  text-shadow: 1px 1px 1px  rgba(23, 21, 21, 0.43);
+
+}
+
+#about p:first-of-type::first-letter {
+    color: #CBA013;
     font-size: 2.6rem;
     line-height: 1;
     margin-inline-end: .3rem;
@@ -201,7 +233,7 @@ h1.shadow{
 
 }
 
-ul.countries-ul {
+/* ul.countries-ul {
     column-count: 2;
     gap: 1em !important;
     padding-left: .5rem;
@@ -211,7 +243,7 @@ ul.countries-ul {
   column-width: 260px;
   column-gap: 1em;
   font-weight: 700;
-}
+} */
 
   ul.countries-ul li{
 margin-bottom: 2rem;
@@ -266,6 +298,7 @@ box-shadow: 5px 8px 10px 8px #1B2A3F;
 }
 #Resume .div-resume-card .resume-card:hover{
     background-color: #666D89;
+    transition: ease 1s;
 
 }
 ul.card-countries-ul {
@@ -331,6 +364,12 @@ video{
     padding: 5rem 0 2rem 0;
     /* padding-top: 100px; */
     /* margin-top: 100px; */
+}
+#home .home-para{
+    font-size: 1.5rem;
+    color: #1B2A3F;
+    /* color: #cccccc; */
+    text-align: center; 
 }
 .cards{
     margin: 2rem;
@@ -413,7 +452,14 @@ color: #CBA013;
 #hiden-nav{
     display: none;
 }
+@media(min-width:1500){
+    .container{
+        /* position: relative; */
+        width: 100vw;
 
+    }
+    
+}
 @media (max-width: 950px){
     img.about-img{
         display: none;
@@ -427,6 +473,13 @@ color: #CBA013;
     
     
     }
+    #home .home-para{
+        font-size: 1.5rem;
+        color: #1B2A3F;
+        color: #cccccc;
+        text-align: center; 
+    }
+    
     #myVideo{
         width: 300px;
     }
