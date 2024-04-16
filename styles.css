@@ -133,7 +133,10 @@ color: #CBA013;
     background-color:#1B2A3F ;
 }
 
+a{
+    text-decoration: none;
 
+}
 .header .header-nav-link {
     list-style: none;
     justify-content: space-between;
@@ -310,6 +313,10 @@ video{
 }
 .card-body{
     padding: 1rem
+
+}
+.demo:active{
+    color: #CBA013;
 
 }
 .div-download-doc{
