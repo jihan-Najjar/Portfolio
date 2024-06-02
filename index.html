@@ -1,462 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jihan Najjar Portfolio</title>
-    <link rel="icon" type="image/png" href="./img/avatar-removebg-preview.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./img/avatar-removebg-preview.png"
+    />
 
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
 
-<body>
-    <div class="d-flex center-container">
-      
-    <div class="container">
-       
-        <header class="header d-flex">
+  <body>
+    <div>
+      <div>
+        <header class="header-container">
+          <div class="logo-container">
+            <img
+              loading="lazy"
+              src="./img/avatar-removebg-preview.png"
+              alt="Jihan najjar image"
+            />
 
-            <div class="header-logo d-flex">
-                <div>
-                    <img loading="lazy" class="image-logo" src="./img/avatar-removebg-preview.png"
-                        alt="Jihan najjar image" />
-                </div>
+            <h3 class="logo-name">Jihan Najjar</h3>
+          </div>
+          <ul class="header-nav-link d-flex">
+            <li>
+              <a href="#" class="nav-item">
+                <!-- <i class="fa-solid fa-house"></i>  -->
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="nav-item">
+                <!-- <i class="fa-solid fa-user"></i></i>  -->
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a href="#Resume" class="nav-item">
+                <!-- <i class="fa-solid fa-sheet-plastic"></i> -->
+                RESUME
+              </a>
+            </li>
+            <li>
+              <a href="#project" class="nav-item">
+                <!-- <i class="fa-solid fa-sheet-plastic"></i> -->
+                PROJECTS
+              </a>
+            </li>
 
-
-                <h3> <span><em> Jihan Najjar</em></span></h>
-
-            </div>
-            <div>
-
-                <nav class="header-nav">
-                    <ul class="header-nav-link d-flex">
-                        <li> <a href="#">
-                                <!-- <i class="fa-solid fa-house"></i>  -->
-                                HOME </a> </li>
-                        <li>
-                            <a href="#about">
-                                <!-- <i class="fa-solid fa-user"></i></i>  -->
-                                ABOUT </a>
-                        </li>
-                        <li>
-                            <a href="#Resume">
-                                <!-- <i class="fa-solid fa-sheet-plastic"></i> -->
-                                RESUME </a>
-                        </li>
-                        <li>
-                            <a href="#project">
-                                <!-- <i class="fa-solid fa-sheet-plastic"></i> -->
-                                PROJECTS </a>
-                        </li>
-
-                        <li>
-                            <a href="#contact">
-                                <!-- <i class="fa-solid fa-address-card"></i> -->
-                                CONTACT </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="hiden-nav">
-                <select id="hiden-nav-section" name="section" class="">
-                    <option value="home">HOME</option>
-                    <option value="about">ABOUT</option>
-                    <option value="Resume">RESUME</option>
-                    <option value="project">PROJECTS</option>
-                    <option value="contact">CONTACT</option>
-                </select>
-            </div>
-
-
+            <li>
+              <a href="#contact" class="nav-item">
+                <!-- <i class="fa-solid fa-address-card"></i> -->
+                CONTACT
+              </a>
+            </li>
+          </ul>
+          <select class="hiden-nav-section" name="section">
+            <option value="home">HOME</option>
+            <option value="about">ABOUT</option>
+            <option value="Resume">RESUME</option>
+            <option value="project">PROJECTS</option>
+            <option value="contact">CONTACT</option>
+          </select>
         </header>
-
-
-
         <main>
+          <section id="home" class="d-flex hero">
+            <div class="section-home d-flex">
+              <!-- <img loading="lazy" class="home-img" src="./img/jjj.png" alt="Jihan najjar image" /> -->
 
-            <section id="home" class="d-flex">
-                <div class="section-home  d-flex">
+              <!-- <div class="home-img-description"> -->
+              <div>
+                <h3 class="hello-span">
+                  <span class="span-uppercase"> hello, </span>
+                </h3>
 
-                    <!-- <img loading="lazy" class="home-img" src="./img/jjj.png" alt="Jihan najjar image" /> -->
+                <h1 style="font-size: 3rem; color: #1b2a3f">
+                  <span class="span-uppercase">
+                    <strong>
+                      <em>I'm Jihan najjar</em>
+                    </strong>
+                  </span>
+                </h1>
 
-                    <!-- <div class="home-img-description"> -->
-                    <div>
-                        <h3 class="hello-span">
-                            <span class="span-uppercase ">
-                                hello,
-                            </span>
-                        </h3>
+                <p class="home-para">
+                  <!-- <br> -->
+                  <strong> Computer System <span> Engineering</span> </strong>
+                  <br />
 
+                  <strong> Front-end <span> Developer </span> </strong>
+                </p>
+                <!-- </div> -->
+              </div>
+            </div>
 
-                        <h1 style="font-size: 3rem; color: #1B2A3F;">
-                            <span class="span-uppercase  ">
-                                <strong>
-                                    <em>I'm Jihan najjar</em>
-                                </strong>
-                            </span>
+            <button class="button">
+              <a href="#project"
+                ><span class="button-span span-uppercase">Project </span>
+              </a>
+            </button>
+          </section>
+          <section id="about" class="d-flex">
+            <img
+              class="about-img"
+              loading="lazy"
+              src="./img/jjj.png"
+              alt="Jihan najjar image"
+            />
+            <div class="d-flex">
+              <div class="about-div">
+                <h1 class="shadow">About Me</h1>
 
-                        </h1>
+                <p>
+                  My name is Jehan Najjar, and I'm deeply passionate about the
+                  world of front-end web development.
+                  <br />
+                  There's something incredibly satisfying about bringing designs
+                  to life and crafting intuitive,
+                  <br />
+                  user-friendly interfaces that enhance the online
+                  experience.<br />
+                  Continuous learning is at the core of my professional ethos.
+                </p>
 
-                        <p class="home-para">
+                <dl>
+                  <dt>Passion for Front-end Development:</dt>
+                  <dd>
+                    Bringing designs to life and crafting intuitive,
+                    user-friendly interfaces.
+                  </dd>
+                  <dd>
+                    Thriving on the challenges of staying current in a
+                    fast-paced industry.
+                  </dd>
+                  <dt>Driving Meaningful Digital Experiences:</dt>
+                  <dd>
+                    Desire to create impactful experiences that exceed user
+                    expectations.
+                  </dd>
+                  <dd>
+                    Commitment to continuous learning and professional growth.
+                  </dd>
+                </dl>
 
-                            <!-- <br> -->
-                            <strong>
-                                Computer System <span> Engineering</span>
-                            </strong>
-                            <br>
+                <p>
+                  web development not just a career but as a lifelong journey of
+                  discovery and innovation.<br />
+                  My commitment to excellence and passion for pushing the
+                  boundaries of what's possible in web development are what
+                  define me as a frontend developer.<br />
+                  You can connect with me at
+                  <span class="p-span-contact">jehan.najjar.55@gmail.com</span>
+                  or telephone<span class="p-span-contact">
+                    +972-592565808</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="Resume" class="Resume d-flex">
+            <h1 class="shadow resume-heading">Resume</h1>
+            <div class="div-resume-card d-flex">
+              <div class="resume-card">
+                <h2 class="span-uppercase">Bachelor's Degree of C.S.E</h2>
+                <p>
+                  <span class="in-card-span-uppercase">
+                    Computer Systems Engineering
+                  </span>
+                  at Palestine Polytechnic University January 2024
+                </p>
 
-                            <strong>
-                                Front-end <span>
-                                    Developer
-                                </span>
-                            </strong>
-                        </p>
-                        <!-- </div> -->
+                <span class="span-uppercase"> GPA: 84.4 </span>
 
-                    </div>
+                <p>
+                  Related courses: Programming with C++, OOP, Data Structure,
+                  Software Engineering and Algorithms.
+                </p>
+              </div>
+
+              <div class="resume-card">
+                <h2 class="span-uppercase">Trainings & Work Experience</h2>
+                <h3>
+                  <span class="in-card-span-uppercase">
+                    Front-End Development
+                  </span>
+                </h3>
+                <p>
+                  Start point company
+                  <span class="span-uppercase">May 2021 60 hours</span>
+                </p>
+                <p>Related gained skills and tools: HTML, CSS, JavaScript.</p>
+              </div>
+              <div class="resume-card">
+                <h2 class="span-uppercase">Trainings</h2>
+                <h3 class="in-card-span-uppercase">The NDG Linux Unhatched</h3>
+                <p>
+                  The NDG Linux Unhatched course in the Cisco Networking Academy
+                  <span class="span-uppercase"> June 2021 </span>
+                </p>
+              </div>
+              <div class="resume-card">
+                <h2 class="span-uppercase">Trainings</h2>
+                <h3 class="in-card-span-uppercase">
+                  Introduction to Internet of thing
+                </h3>
+                <p>
+                  Introduction to IoT course in the Cisco Networking Academy
+                  <span class="span-uppercase"> Nov 2021 </span>
+                </p>
+              </div>
+              <div class="resume-card">
+                <h2 class="span-uppercase">Work Experience</h2>
+                <h3 class="in-card-span-uppercase">
+                  Mobile localization at Azure IoT Central
+                </h3>
+                <p>
+                  Determine the location of the phone using the IoT Central
+                  service and reflected the concepts of the Internet of Things
+                  within the project presentation.
+                </p>
+              </div>
+
+              <div class="resume-card">
+                <h2 class="span-uppercase">skills</h2>
+                <ul class="card-countries-ul">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>React JS</li>
+                  <li>C++</li>
+                  <li>Python beginner</li>
+                  <li>Java</li>
+                  <li>SASS</li>
+                  <li>Git</li>
+                  <li>Github</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <p> -->
+            <a
+              class="download-CV button"
+              href="./files/foothill.pdf"
+              download="foothill.pdf"
+            >
+              Download CV
+              <!-- <i class="fa-solid fa-file-arrow-down" style="width: 100px; height: 100px; color: aliceblue;"> -->
+              <!-- </i> -->
+            </a>
+
+            <!-- </p> -->
+          </section>
+          <section id="project" class="Resume d-flex">
+            <h1 class="shadow resume-heading">Projects</h1>
+            <div class="card d-flex">
+              <div>
+                <video
+                  id="myVideo"
+                  src="./img/422461887_24661956820117943_63929101264089951_n.mp4"
+                  class="card-img-top"
+                  loop
+                ></video>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Smart Cradle</h3>
+
+                <p class="card-text">
+                  The smart cradle system alerts parents to potential SIDS
+                  risks, monitors baby's temperature, heart rate, and
+                  surroundings, and can activate fans or heaters as needed. It
+                  also features a rocking mechanism for comfort.
+                </p>
+                <div>
+                  <a
+                    class="download-doc"
+                    href="./files/13.pdf"
+                    download="foothill.pdf"
+                  >
+                    download doc
+                  </a>
                 </div>
+              </div>
+            </div>
 
-                <button class="button"><a href="#project"><span class="button-span span-uppercase">Project </span>
-                    </a></button>
-            </section>
-            <section id="about" class="d-flex">
-           <img class="about-img" loading="lazy" src="./img/jjj.png" alt="Jihan najjar image">
-<div class="d-flex">
+            <div class="cards d-flex">
+              <div class="cards-body">
+                <img
+                  src="./img/fullscreen.png"
+                  class="img-cards"
+                  alt="img-cards EasyFullScreen"
+                  loading="lazy"
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">EasyFullScreen</h3>
 
-                <div class="about-div ">
-                    <h1 class=shadow>
-                        About Me </h1>
-
-                    <p>
-                        My name is Jehan Najjar, and I'm deeply passionate about the world of front-end web development.
-                        <br>
-                        There's something incredibly satisfying about bringing designs to life and crafting intuitive,
-                        <br>
-                        user-friendly interfaces that enhance the online experience.<br> Continuous learning is at the core
-                        of my professional ethos.
-                    </p>
-
-                    <dl>
-                        <dt>Passion for Front-end Development:</dt>
-                        <dd> Bringing designs to life and crafting intuitive, user-friendly interfaces.
-                        </dd>
-                        <dd>Thriving on the challenges of staying current in a fast-paced industry.</dd>
-                        <dt>Driving Meaningful Digital Experiences:</dt>
-                        <dd>Desire to create impactful experiences that exceed user expectations.
-                        </dd>
-                        <dd>
-                            Commitment to continuous learning and professional growth.
-                        </dd>
-                    </dl>
-
-
-                    <p>
-                        web development not just a career but as a lifelong journey of discovery and innovation.<br> My
-                        commitment to excellence and passion for pushing the boundaries of what's possible in web
-                        development are what define me as a frontend developer.<br> You can connect with me at
-                        <span class="p-span-contact">jehan.najjar.55@gmail.com</span> or telephone<span
-                            class="p-span-contact"> +972-592565808</span>
-                    </p>
-
+                  <a
+                    class="download-doc demo"
+                    href="https://jihan-najjar.github.io/vanilaEasyFullScreen/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
                 </div>
+              </div>
+              <div class="cards-body">
+                <img
+                  src="./img/respon-logIn.png"
+                  class="img-cards"
+                  alt=" img-cards Responsive logIn"
+                  loading="lazy"
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">Responsive logIn</h3>
 
+                  <a
+                    class="download-doc demo"
+                    href="https://jihan-najjar.github.io/ResponsiveAnimatedLogin/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
                 </div>
-         
+              </div>
+              <div class="cards-body">
+                <img
+                  src="./img/cal.png"
+                  class="img-cards"
+                  alt="img-cards-Simple Calculator"
+                  loading="lazy"
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">Simple Calculator</h3>
 
-
-
-            </section>
-            <section id="Resume" class="Resume d-flex">
-
-                <h1 class="shadow resume-heading">
-                    Resume </h1>
-                <div class="div-resume-card d-flex">
-                    <div class="resume-card">
-                        <h2 class="span-uppercase">
-                            Bachelor's Degree of C.S.E
-                        </h2>
-                        <p>
-                            <span class="in-card-span-uppercase"> Computer Systems Engineering </span> at
-                            Palestine Polytechnic University
-                            January 2024
-                        </p>
-
-                        <span class="span-uppercase"> GPA: 84.4 </span>
-
-                        <p> Related courses:
-                            Programming with C++,
-                            OOP, Data Structure, Software
-                            Engineering and Algorithms.
-                        </p>
-
-
-                    </div>
-
-
-                    <div class="resume-card">
-                        <h2 class="span-uppercase">
-                            Trainings & Work Experience
-                        </h2>
-                        <h3>
-                            <span class="in-card-span-uppercase">
-                                Front-End Development
-                            </span>
-                        </h3>
-                        <p>
-                            Start point company <span class="span-uppercase">May 2021 60 hours</span>
-
-                        </p>
-                        <p>
-
-                            Related gained skills and tools:
-                            HTML,
-                            CSS, JavaScript.
-                        </p>
-                    </div>
-                    <div class="resume-card">
-                        <h2 class="span-uppercase">
-                            Trainings
-                        </h2>
-                        <h3 class="in-card-span-uppercase"> The NDG Linux Unhatched </h3>
-                        <p>
-                            The NDG Linux Unhatched course in the Cisco Networking Academy
-                            <span class="span-uppercase">
-                                June 2021
-                            </span>
-
-                        </p>
-                    </div>
-                    <div class="resume-card">
-                        <h2 class="span-uppercase">
-                            Trainings
-                        </h2>
-                        <h3 class="in-card-span-uppercase">Introduction to Internet of thing </h3>
-                        <p>
-                            Introduction to IoT course in the Cisco Networking Academy
-                            <span class="span-uppercase">
-                                Nov 2021
-                            </span>
-
-                        </p>
-                    </div>
-                    <div class="resume-card">
-                        <h2 class="span-uppercase">
-                            Work Experience
-                        </h2>
-                        <h3 class="in-card-span-uppercase">Mobile localization at Azure IoT Central </h3>
-                        <p>
-                            Determine the
-                            location of the phone using the IoT Central
-                            service and reflected the concepts of the
-                            Internet of Things within the project presentation.
-                        </p>
-                    </div>
-
-
-                    <div class="resume-card">
-                        <h2 class="span-uppercase ">skills</h2>
-                        <ul class="card-countries-ul">
-                            <li> HTML </li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                            <li>React JS </li>
-                            <li> C++ </li>
-                            <li> Python beginner</li>
-                            <li> Java</li>
-                            <li> SASS</li>
-                            <li> Git</li>
-                            <li> Github</li>
-
-                        </ul>
-                    </div>
+                  <a
+                    class="download-doc demo"
+                    href="https://jihan-najjar.github.io/vanilaCalc/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
                 </div>
-                <!-- <p> -->
-                <a class="download-CV button" href="./files/foothill.pdf" download="foothill.pdf">
-                    Download CV
-                    <!-- <i class="fa-solid fa-file-arrow-down" style="width: 100px; height: 100px; color: aliceblue;"> -->
-                    <!-- </i> -->
+              </div>
+              <div class="cards-body">
+                <img
+                  src="./img/form.png"
+                  class="img-cards"
+                  alt="img-cards Simple Form"
+                  loading="lazy"
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">Simple Form</h3>
 
-                </a>
-
-                <!-- </p> -->
-
-            </section>
-            <section id="project" class="Resume d-flex">
-                <h1 class="shadow resume-heading">
-                    Projects </h1>
-                <div class="card d-flex">
-                    <div>
-
-                        <video id="myVideo" src="./img/422461887_24661956820117943_63929101264089951_n.mp4"
-                            class="card-img-top" loop></video>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Smart Cradle</h3>
-
-                        <p class="card-text">The smart cradle system alerts parents to potential SIDS risks, monitors
-                            baby's
-                            temperature, heart rate, and surroundings, and can activate fans or heaters as needed. It
-                            also
-                            features a rocking mechanism for comfort.
-
-                        </p>
-                        <div>
-                            <a class="download-doc" href="./files/13.pdf" download="foothill.pdf">
-                                download doc
-                            </a>
-                        </div>
-
-                    </div>
+                  <a
+                    class="download-doc demo"
+                    href="https://jihan-najjar.github.io/vanilaForm/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
                 </div>
+              </div>
+              <div class="cards-body">
+                <img
+                  src="./img/resturant.png"
+                  class="img-cards"
+                  alt="img-cards Restaurant"
+                  loading="lazy"
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">Restaurant</h3>
 
-                <div class="cards d-flex">
-
-
-                    <div class="cards-body ">
-                        <img src="./img/fullscreen.png" class="img-cards" alt="img-cards EasyFullScreen" loading="lazy"/>
-                        <div class="desc-card">
-                            <h3 class="card-title">EasyFullScreen</h3>
-
-                            <a class="download-doc demo" href="https://jihan-najjar.github.io/vanilaEasyFullScreen/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards-body ">
-                        <img src="./img/respon-logIn.png" class="img-cards" alt=" img-cards Responsive logIn" loading="lazy" />
-                        <div class="desc-card">
-                            <h3 class="card-title">Responsive logIn</h3>
-
-                            <a class="download-doc demo" href="https://jihan-najjar.github.io/ResponsiveAnimatedLogin/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards-body ">
-                        <img src="./img/cal.png" class="img-cards" alt="img-cards-Simple Calculator" loading="lazy"/>
-                        <div class="desc-card">
-                            <h3 class="card-title"> Simple Calculator</h3>
-
-                            <a class="download-doc demo" href="https://jihan-najjar.github.io/vanilaCalc/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards-body ">
-                        <img src="./img/form.png" class="img-cards" alt="img-cards Simple Form" loading="lazy"/>
-                        <div class="desc-card">
-                            <h3 class="card-title">Simple Form</h3>
-
-                            <a class="download-doc demo" href="https://jihan-najjar.github.io/vanilaForm/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards-body ">
-                        <img src="./img/resturant.png" class="img-cards" alt="img-cards Restaurant"  loading="lazy"/>
-                        <div class="desc-card">
-                            <h3 class="card-title">Restaurant</h3>
-
-                            <a class="download-doc demo" href=" https://jihan-najjar.github.io/vanilaRestaurant/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards-body ">
-                        <img src="./img/video-bg.png" class="img-cards" loading="lazy"
-                            alt="img-cards wep page with Video Background " />
-                        <div class="desc-card">
-                            <h3 class="card-title">Background Video</h3>
-
-                            <a class="demo download-doc " href="https://jihan-najjar.github.io/BGVideo/"
-                                target="_blank">
-                                Demo
-                            </a>
-                        </div>
-                    </div>
-
-
-
+                  <a
+                    class="download-doc demo"
+                    href=" https://jihan-najjar.github.io/vanilaRestaurant/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
                 </div>
+              </div>
+              <div class="cards-body">
+                <img
+                  src="./img/video-bg.png"
+                  class="img-cards"
+                  loading="lazy"
+                  alt="img-cards wep page with Video Background "
+                />
+                <div class="desc-card">
+                  <h3 class="card-title">Background Video</h3>
 
-            </section>
+                  <a
+                    class="demo download-doc"
+                    href="https://jihan-najjar.github.io/BGVideo/"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
         <footer class="footer" id="contact">
-            <div class="top-footer d-flex">
-                <div class="top-right-footer">
-                    <h3>Jihan najjar</h3>
-                    <p>
-                        Computer system Engineer building product, and
-                        A Frontend Web Developer building
-                        the Frontend of Websites and Web Applications .
-                    </p>
-                </div>
-                <div class="top-left-footer ">
-                    <h3>
-                        Social Contact
-                    </h3>
-                    <ul class="Social-icon d-flex ">
-                        <li><a href="https://www.discordapp.com/users/1221469840901148812" target="_blank"
-                                class="social-contact"><i class="fa-brands fa-discord fa-lg"></i></a></li>
-                        <li><a href="https://www.facebook.com/jihanmalikq" target="_blank" class="social-contact"><i
-                                    class="fa-brands fa-facebook fa-lg"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jihan-najjar15a4bb277" target="_blank"
-                                class="social-contact"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
-                        <li><a href="https://github.com/jihan-Najjar" target="_blank" class="social-contact"><i
-                                    class="fa-brands fa-github fa-lg"></i></a></li>
-
-                    </ul>
-                </div>
-
+          <div class="top-footer d-flex">
+            <div class="top-right-footer">
+              <h3>Jihan najjar</h3>
+              <p>
+                Computer system Engineer building product, and A Frontend Web
+                Developer building the Frontend of Websites and Web Applications
+                .
+              </p>
             </div>
-
-            <div class="buttom-footer">
-                &copy; Copyright Jihan Najjar Portfolio
-
+            <div class="top-left-footer">
+              <h3>Social Contact</h3>
+              <ul class="Social-icon d-flex">
+                <li>
+                  <a
+                    href="https://www.discordapp.com/users/1221469840901148812"
+                    target="_blank"
+                    class="social-contact"
+                    ><i class="fa-brands fa-discord fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/jihanmalikq"
+                    target="_blank"
+                    class="social-contact"
+                    ><i class="fa-brands fa-facebook fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/jihan-najjar15a4bb277"
+                    target="_blank"
+                    class="social-contact"
+                    ><i class="fa-brands fa-linkedin fa-lg"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/jihan-Najjar"
+                    target="_blank"
+                    class="social-contact"
+                    ><i class="fa-brands fa-github fa-lg"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <div class="buttom-footer">
+            &copy; Copyright Jihan Najjar Portfolio
+          </div>
         </footer>
+      </div>
     </div>
-</div>
 
     <script>
-
-
-        document.getElementById("hiden-nav-section").addEventListener("change", function () {
-            var selectedOption = this.value;
-            //   document.getElementById("demo").innerHTML = "You selected: " + selectedOption;
-            if (selectedOption === "home") {
-                console.log(selectedOption)
-                window.location.href = "#home"
-
-            }
-            else {
-                window.location.href = "#" + selectedOption;
-
-            }
+      document
+        .getElementById("hiden-nav-section")
+        .addEventListener("change", function () {
+          var selectedOption = this.value;
+          //   document.getElementById("demo").innerHTML = "You selected: " + selectedOption;
+          if (selectedOption === "home") {
+            console.log(selectedOption);
+            window.location.href = "#home";
+          } else {
+            window.location.href = "#" + selectedOption;
+          }
         });
 
+      document.addEventListener("DOMContentLoaded", function () {
+        var video = document.getElementById("myVideo");
 
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("myVideo");
-
-            video.addEventListener("mouseenter", function () {
-                video.play();
-            });
-
-            video.addEventListener("mouseleave", function () {
-                video.pause();
-                video.currentTime = 0;
-            });
+        video.addEventListener("mouseenter", function () {
+          video.play();
         });
+
+        video.addEventListener("mouseleave", function () {
+          video.pause();
+          video.currentTime = 0;
+        });
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
