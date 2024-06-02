@@ -1,475 +1,469 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: "Poppins", Arial, sans-serif;
-    /* overflow-x:hidden; */
-    /* color: #1B2A3F; */
-    
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+  /* overflow-x:hidden; */
+  /* color: #1B2A3F; */
 }
 
 .d-flex {
-    display: flex;
-    align-items: center;
-justify-content: center;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.container{
-/* width: 1200px; */
+body {
+  background-color: #ededef;
 }
 
+.hero {
+  max-height: 800px;
+}
+.container {
+  /* width: 1200px; */
+}
 
 .header {
-    /* width: 100%; */
-    position: fixed;
-    /* overflow-x: ; */
-top: 0;
-right: 0;
-left: 0;
-    background-color: #1B2A3F;
-    justify-content: space-between;
-    padding: 0 1rem 0 1rem;
-    font-family: "Poppins", Arial, sans-serif;
-    font-weight: bold;
-    /* color: aliceblue !important; */
+  /* width: 100%; */
+  position: fixed;
+  /* overflow-x: ; */
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #1b2a3f;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+  /* color: aliceblue !important; */
 
-    color: aliceblue;
-
+  color: aliceblue;
 }
 
 .header .header-logo {
-    gap: 1rem; 
-    margin-inline-start: 3rem;
-
- 
-
+  gap: 1rem;
+  margin-inline-start: 3rem;
 }
-#hiden-nav-section{
-    color: aliceblue;
-    background-color: #1B2A3F;
-    font-weight: bold;
-    border-radius: 9px;
-    /* border: 2px solid #CBA013; */
-    padding: .5rem;
-    margin-right: 2rem;
-    z-index: 1000;
-
+.hiden-nav-section {
+  color: aliceblue;
+  background-color: #1b2a3f;
+  font-weight: bold;
+  border-radius: 9px;
+  /* border: 2px solid #CBA013; */
+  padding: 0.5rem;
+  z-index: 1000;
+  display: none;
 }
 
 .header .image-logo {
-
-    box-sizing: content-box;
-    border-radius: 50%;
-    border: 1px solid white;
-    background-color: #cccccc;
-    margin: 1rem 0 1rem 0;
-
+  box-sizing: content-box;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #cccccc;
+  margin: 1rem 0 1rem 0;
 }
 
+.header-nav-link {
+  gap: 3rem;
+  list-style: none;
+  color: aliceblue;
+}
 
-ul.header-nav-link{
-    gap: 3rem;
-    margin-block-start: .5em;
-    margin-block-end: .5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 3em;
+.nav-item {
+  color: aliceblue;
 }
 
 .header-nav-link li a:hover {
-    border-bottom:4px solid #CBA013;
-    color: #ffbd39;
-    outline: none !important; 
-    transition: all .3s ease-out 0s;
-
+  border-bottom: 4px solid #cba013;
+  color: #ffbd39;
+  outline: none !important;
+  transition: all 0.3s ease-out 0s;
 }
-
 
 #home {
-   
-    /* background-image: url("./img/avatar.png");
-    background-attachment: fixed; */
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(148,768,347)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230F1A47'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='680' height='566.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    flex-direction: column;
-    color: #1B2A3F;
-
+  /* background-image: url("./img/avatar.png");
+      background-attachment: fixed; */
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(148,768,347)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230F1A47'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='680' height='566.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  flex-direction: column;
+  color: #1b2a3f;
 }
-.section-home{
- 
-    flex-direction: column;
-    text-align: left;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+.section-home {
+  flex-direction: column;
+  text-align: left;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
 }
-.section-home span{
-    font-weight: bold;
-    color: #ffbd39;
-    
-
+.section-home span {
+  font-weight: bold;
+  color: #ffbd39;
 }
-  .span-uppercase{
-text-transform: uppercase;
-color: #CBA013;
+.span-uppercase {
+  text-transform: uppercase;
+  color: #cba013;
 }
 
-.home-img{
-    /* image-/: */
-    margin-block-start: 3.5em;
-    margin-block-end: 2em;
-    border-bottom-right-radius:7.0%;
-    border-bottom-left-radius:10% ;
+.home-img {
+  /* image-/: */
+  margin-block-start: 3.5em;
+  margin-block-end: 2em;
+  border-bottom-right-radius: 7%;
+  border-bottom-left-radius: 10%;
 }
-.button{
-    margin-block-start: 5rem;
-    margin-block-end: 2rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    padding: .5em 1em .5em 1em;
-   
-    border: 3px solid #1B2A3F;
+.button {
+  margin-block-start: 5rem;
+  margin-block-end: 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.5em 1em 0.5em 1em;
+
+  border: 3px solid #1b2a3f;
 }
-.button .button-span{
-    font-weight: bolder;
-    /* color:red; */
-    font-size: 1.5rem; 
+.button .button-span {
+  font-weight: bolder;
+  /* color:red; */
+  font-size: 1.5rem;
 }
-.button:hover{
-    background-color:#1B2A3F ;
+.button:hover {
+  background-color: #1b2a3f;
 }
 
-a{
-    text-decoration: none;
-
+a {
+  text-decoration: none;
 }
 .header .header-nav-link {
-    list-style: none;
+  list-style: none;
 }
 .header .header-nav-link li {
-    margin: 2rem 0 2rem 0;}
+  margin: 2rem 0 2rem 0;
+}
 
 .header .header-nav-link a {
-    color: aliceblue;
-    text-decoration: none;
-    padding-bottom: 5px;}
-
-
-#about{
-    color: #1B2A3F;
-text-align: left;
-    background-color: #EDEDEF;
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem;
-    padding-block-start: 2rem;
-    padding-block-end: 2rem;
-    gap: 10rem;
-
+  color: aliceblue;
+  text-decoration: none;
+  padding-bottom: 5px;
 }
-#about p,dt{
-    margin-top: .7rem;
+
+#about {
+  color: #1b2a3f;
+  text-align: left;
+  background-color: #ededef;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  gap: 10rem;
+}
+#about p,
+dt {
+  margin-top: 0.7rem;
   font-weight: 700;
-
 }
-dd{
+dd {
   font-weight: 500;
   padding-left: 2rem;
-
 }
-.p-span-contact ,dt{
-    color: #CBA013;
-  text-shadow: 1px 1px 1px  rgba(23, 21, 21, 0.43);
-
+.p-span-contact,
+dt {
+  color: #cba013;
+  text-shadow: 1px 1px 1px rgba(23, 21, 21, 0.43);
 }
 
 #about p:first-of-type::first-letter {
-    color: #CBA013;
-    font-size: 2.6rem;
-    line-height: 1;
-    margin-inline-end: .3rem;
-    font-weight: 600;
-  text-shadow: 3px 3px 3px  rgba(85, 10, 10, 0.43);
-
-
+  color: #cba013;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-inline-end: 0.3rem;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px rgba(85, 10, 10, 0.43);
 }
 
-.about-div{
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem;
-    font-size: 1.3rem;
-    font-weight: 500;
+.about-div {
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
-h1.shadow{
-    font-weight: 900;
-    font-size: 4rem;
-  text-shadow: 3px 3px 3px  rgba(85, 10, 10, 0.43);
+h1.shadow {
+  font-weight: 900;
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px rgba(85, 10, 10, 0.43);
   padding-block-start: 4rem;
-    padding-block-end: 2rem;
+  padding-block-end: 2rem;
 }
 
 .footer {
-    margin-top: 3rem;
-    text-align: center;
-
-
+  margin-top: 3rem;
+  text-align: center;
 }
 
 /* ul.countries-ul {
-    column-count: 2;
-    gap: 1em !important;
-    padding-left: .5rem;
-    margin-block-start: 3rem;
-    list-style: none;
-    width: 100%;
-  column-width: 260px;
-  column-gap: 1em;
-  font-weight: 700;
-} */
+      column-count: 2;
+      gap: 1em !important;
+      padding-left: .5rem;
+      margin-block-start: 3rem;
+      list-style: none;
+      width: 100%;
+    column-width: 260px;
+    column-gap: 1em;
+    font-weight: 700;
+  } */
 
-  ul.countries-ul li{
-margin-bottom: 2rem;
+ul.countries-ul li {
+  margin-bottom: 2rem;
 }
-.Resume{
-    padding: 2rem;
-    flex-direction: column;
-   color: #202B53;
-    padding-block-start: 4rem;
-    padding-block-end: 2rem;
-
+.Resume {
+  padding: 2rem;
+  flex-direction: column;
+  color: #202b53;
+  padding-block-start: 4rem;
+  padding-block-end: 2rem;
 }
-#Resume{
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(0,768,347)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230F1A47'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='680' height='566.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
+#Resume {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(0,768,347)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230F1A47'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='680' height='566.7' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
-.in-card-span-uppercase{
-font-weight: bolder;
-
+.in-card-span-uppercase {
+  font-weight: bolder;
 }
-h2{
- 
-border-bottom:2px solid #1B2A3F;
-margin-bottom: 1rem;
+h2 {
+  border-bottom: 2px solid #1b2a3f;
+  margin-bottom: 1rem;
 }
-#Resume .div-resume-card{
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* padding: 2rem; */
-gap: 3rem;
-margin-inline-start: 3rem;
-margin-inline-end: 3rem;
-margin-block-start: 4rem;
-margin-block-end: 3rem;
+#Resume .div-resume-card {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+  gap: 3rem;
+  margin-inline-start: 3rem;
+  margin-inline-end: 3rem;
+  margin-block-start: 4rem;
+  margin-block-end: 3rem;
 }
-#Resume .div-resume-card .resume-card{
-    width: 30rem;
-height: 15rem;
-background-color: #EDEDEF;
-padding-inline-start: 3rem;
-padding-inline-end: 3rem;
-padding-block-start: 2rem;
-padding-block-end: 2rem;
-border-radius: 7px;
-font-weight: bold;
-box-shadow: 5px 8px 10px 8px #1B2A3F;
-
+#Resume .div-resume-card .resume-card {
+  width: 30rem;
+  height: 15rem;
+  background-color: #ededef;
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  border-radius: 7px;
+  font-weight: bold;
+  box-shadow: 5px 8px 10px 8px #1b2a3f;
 }
-#Resume .div-resume-card .resume-card:hover{
-    background-color: #666D89;
-    transition: ease 1s;
-
+#Resume .div-resume-card .resume-card:hover {
+  background-color: #666d89;
+  transition: ease 1s;
 }
 ul.card-countries-ul {
-    column-count: 2;
-    padding-left: 1.5rem;
-
+  column-count: 2;
+  padding-left: 1.5rem;
 }
 .download-CV {
-    
- 
-   background-color: #CBA013;
-   text-align: center;
-   color: #cccccc;
-   font-weight: bolder;
-   padding: .7rem;
-   text-decoration: none;
-   border-radius: 2rem;
-
-
+  background-color: #cba013;
+  text-align: center;
+  color: #cccccc;
+  font-weight: bolder;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 2rem;
 }
-section#project{
-    color: #1B2A3F;
-    background-color: #F8F8F8 !important;
-
-
+section#project {
+  color: #1b2a3f;
+  background-color: #f8f8f8 !important;
 }
-#project .card{
-    /* background-color: #666D89; */
-    border: 2px solid #CBA013;
-    /* width: 60%; */
-    justify-content:space-between ;
-    margin: 0 5rem 0 5rem;
-
-
+#project .card {
+  /* background-color: #666D89; */
+  border: 2px solid #cba013;
+  /* width: 60%; */
+  justify-content: space-between;
+  margin: 0 5rem 0 5rem;
 }
-#project .card p{
-/* width: 30%; */
+#project .card p {
+  /* width: 30%; */
 }
 
-video{
- 
-    width: 400px;
+video {
+  width: 400px;
 
-    padding: 1rem
+  padding: 1rem;
 }
-.card-body{
-    padding: 1rem
-
+.card-body {
+  padding: 1rem;
 }
-.demo:active{
-    color: #CBA013;
-
+.demo:active {
+  color: #cba013;
 }
 
-.download-doc{
-    text-decoration: none;
-    color: #202B53;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5rem 0 2rem 0;
-   
+.download-doc {
+  text-decoration: none;
+  color: #202b53;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5rem 0 2rem 0;
 }
-#home .home-para{
-    font-size: 1.5rem;
-    color: #1B2A3F;
-    text-align: center; 
+#home .home-para {
+  font-size: 1.5rem;
+  color: #1b2a3f;
+  text-align: center;
 }
-.cards{
-    margin: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-
+.cards {
+  margin: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.desc-card{
-    padding: 1rem 1rem 1rem 1rem ;
-    text-align: left;
-    background-color: #666D89;
-    margin: 0 0 .2rem 0;
+.desc-card {
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: left;
+  background-color: #666d89;
+  margin: 0 0 0.2rem 0;
 }
-.cards-body{
-    background-color: #CBA013;
-    width: 300px;
-    margin: 1rem;
-/* justify-content: space-evenly; */
-flex-direction: column;
+.cards-body {
+  background-color: #cba013;
+  width: 300px;
+  margin: 1rem;
+  /* justify-content: space-evenly; */
+  flex-direction: column;
 }
-.desc-card h3{
-    margin-bottom: 1rem;
+.desc-card h3 {
+  margin-bottom: 1rem;
 }
-.demo:hover{
- 
-    /* border-radius: 9px */
+.demo:hover {
+  /* border-radius: 9px */
   /* border: none;
-
-  background: none; */
-color: #CBA013;
-}
-.footer{
-    color: aliceblue;
-    margin-top: 0;
-
-}
-.img-cards{
-    width: inherit;
-    height: 200px;
-    border: 2px solid  #1B2A3F;
-}
-#contact{
-    background-color: #1B2A3F;
- 
-
-}
-.top-right-footer{
-    text-align: left;
-    padding:0 2rem 0 2rem;
   
+    background: none; */
+  color: #cba013;
 }
-.top-left-footer{
-    padding:0 2rem 0 2rem;
-
+.footer {
+  color: aliceblue;
+  margin-top: 0;
+}
+.img-cards {
+  width: inherit;
+  height: 200px;
+  border: 2px solid #1b2a3f;
+}
+#contact {
+  background-color: #1b2a3f;
+}
+.top-right-footer {
+  text-align: left;
+  padding: 0 2rem 0 2rem;
+}
+.top-left-footer {
+  padding: 0 2rem 0 2rem;
 }
 
-.top-footer{
-    border-bottom:2px solid #CBA013;
-    margin:0 2rem 0 2rem ;
-    /* margin-left: 2rem; */
-    /* background-color: #CBA013; */
-    padding:2rem 0 2rem 0 ;
-    justify-content: space-between;
-
-
+.top-footer {
+  border-bottom: 2px solid #cba013;
+  margin: 0 2rem 0 2rem;
+  /* margin-left: 2rem; */
+  /* background-color: #CBA013; */
+  padding: 2rem 0 2rem 0;
+  justify-content: space-between;
 }
-.buttom-footer{
-    padding:2rem 0 2rem 0 ;
+.buttom-footer {
+  padding: 2rem 0 2rem 0;
 }
-.Social-icon{
-    padding: 1rem 0  0 0;
-    list-style: none;
-    gap: 1rem;
+.Social-icon {
+  padding: 1rem 0 0 0;
+  list-style: none;
+  gap: 1rem;
 }
-.fa-brands{
-    color: aliceblue;
-
+.fa-brands {
+  color: aliceblue;
 }
 /* transform: scale(0.5) translateY(-115px); */
-#hiden-nav{
-    display: none;
+#hiden-nav {
+  display: none;
 }
 
-@media (max-width: 950px){
-    body{
-margin-left: 320px;
-margin-right: 300px;
-}
-    
-    img.about-img{
-        display: none;
-    }
-    #project .card{
-        border: 2px solid #CBA013;
-        flex-direction: column;
-        justify-content:space-between ;
-        margin: 0 5rem 0 5rem;
-        width: 300px;
-    
-    
-    }
-    #home .home-para{
-        font-size: 1.5rem;
-        color: #1B2A3F;
-        color: #cccccc;
-        text-align: center; 
-    }
-    
-    #myVideo{
-        width: 300px;
-    }
-nav{
-    display: none;
+p {
+  writing-mode: horizontal-tb;
 }
 
-#hiden-nav{
+.logo {
+  font-style: italic;
+}
+@media (max-width: 950px) {
+  img.about-img {
+    display: none;
+  }
+  #project .card {
+    border: 2px solid #cba013;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5rem 0 5rem;
+    width: 300px;
+  }
+  #home .home-para {
+    font-size: 1.5rem;
+    color: #1b2a3f;
+    color: #cccccc;
+    text-align: center;
+  }
+
+  .header-nav-link {
+    display: none;
+  }
+
+  .hiden-nav-section {
     display: block;
+  }
+  #myVideo {
+    width: 300px;
+  }
 }
 
+@media (max-width: 500px) {
+  img.about-img {
+    display: none;
+  }
+  #project .card {
+    border: 2px solid #cba013;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5rem 0 5rem;
+    width: 300px;
+  }
+  #home .home-para {
+    font-size: 1.5rem;
+    color: #1b2a3f;
+    color: #cccccc;
+    text-align: center;
+  }
+
+  #myVideo {
+    width: 300px;
+  }
+  nav {
+    display: none;
+  }
 }
-p{
-    writing-mode: horizontal-tb;
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b2a3f;
+  padding: 10px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name {
+  color: aliceblue;
+  font-style: italic;
 }
